@@ -175,7 +175,7 @@ h4::before{
 .plan div{
   flex-grow: 1;
   border: 1px solid grey;
-  height: 400px;
+  height: 350px;
   margin: auto 2%;
   position: relative;
 }
@@ -186,8 +186,9 @@ h4::before{
   top: 6%;
   left: 27%;
 }
-.plan_type p{
+.plan_type p:first-of-type{
   color: #C8C8C8;
+  background-color: #E0E0E0;
   font-size: 14px;
   border-radius: 50%;
   border: 1px solid grey;
@@ -199,16 +200,82 @@ h4::before{
   top: 65px;
   left: 68px;
 }
-.zero{
-  color: #C8C8C8;
-  font-size: 14px;
-  position: absolute;
-  top: 85px;
-  left: 88px;
+.zero {
+    font-size: 14px;
+    position: absolute;
+    top: 185px;
+    left: 0;
+    border: 1px solid #B8B8B8;
+    width: 100%;
+    background-color: #B8B8B8;
+    text-align: center;
+    color: #000000;
 }
-
-
-
+.down{
+  top: 203px;
+  background-color: #C0C0C0;
+}
+.link{
+  color: #FFFFFF;
+  font-size: 12px;
+  background-color: #53C67F;
+  position: absolute;
+  bottom: 35px;
+  left: 75px;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+.white{
+  background-color: #FFFFFF;
+  color: #53C67F;
+}
+.WHITE{
+  background-color: #53C67F;
+}
+#white{
+  color: #FFFFFF;
+}
+.color{
+  background-color: #E0E0E0;
+}
+.down2{
+  top: 221px;
+}
+.position {
+    top: 239px;
+}
+.plan_type::before {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -13px;
+    left: 40%;
+    background-color: #FFFFFF;
+    border: 1px solid #787878;
+    border-radius: 50%;
+    content: '';
+}
+.plan_type::after {
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5px;
+    left: 43%;
+    background-color: #787878;
+    border-radius: 50%;
+    content: '';
+}
+.WHITE::before{
+  background-color: #53C67F;
+  border: 1px solid #53C67F;
+}
+.WHITE::after{
+  background-color: #FFFFFF;
+}
 
 
 
