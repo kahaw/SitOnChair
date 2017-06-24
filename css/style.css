@@ -7,21 +7,23 @@
 header{
   width: 100%;
   background-color: #000000;
+  height: 39px;
 }
 .container{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   width: 900px;
   margin: 0 auto;
   position: relative;
   font-size: 0px;
   /*padding:;*/
 }
-section{
+section {
   width: 100%;
+  height: 404px;
 }
 .first{
   background-color: grey;
-  height: 317px;
+  height: 357px;
 }
 .third{
   background-color: #E0E0E0;
@@ -53,18 +55,47 @@ ul{
   right: 1px;
   top: 7px;
 }
+
+.login-list li {
+    display: block;
+    font-size: 10px;
+    margin: 2px auto;
+}
+.login-list{
+  position: absolute;
+  top: 21px;
+  right: 228px;
+  background-color: #000000;
+}
+.login-triangle {
+    width: 0;
+    border: 12px solid transparent;
+    border-bottom-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 69%;
+}
+
+
+
+
+
+
+
+
+
 .photo, .text{
   position: absolute;
 }
 .photo {
-    top: 7px;
-    left: 7px;
+  top: 38px;
+  left: 7px;
 }
 .text {
-    top: 37px;
-    right: 36px;
-    width: 50%;
-    text-align: center;
+  top: 60px;
+  right: 36px;
+  width: 50%;
+  text-align: center;
 }
 h2{
   color: #000000;
@@ -77,25 +108,28 @@ h2{
   text-align: center;
 }
 .button {
-    font-size: 12px;
-    color: black;
-    background-color: #53C67F;
-    width: 100px;
-    height: 22px;
-    text-align: center;
-    margin: 40px auto;
-    border-radius: 5px;
-    padding: 4px 2px;
-    color: white;
-  }
-  .box{
-    width: 280px;
-    border: 1px solid #B8B8B8;
-    height: 195px;
-  }
+  font-size: 12px;
+  color: black;
+  background-color: #53C67F;
+  width: 100px;
+  height: 22px;
+  text-align: center;
+  margin: 40px auto;
+  border-radius: 5px;
+  padding: 4px 2px;
+  color: white;
+}
+#button{
+  text-decoration: none;
+}
+.box{
+  width: 280px;
+  border: 1px solid #B8B8B8;
+  height: 195px;
+}
 .test{
-    display: flex;
-  }
+  display: flex;
+}
 .chair{
   background-image: url(../images/box1_img.jpg);
   background-size: cover;
@@ -108,20 +142,23 @@ h2{
   flex-grow: 1;
   margin: auto 2%;
 }
-  .input{
-    flex-grow: 1;
-  }
-  .input h3{
-    font-size: 14px;
-    padding: 10px 0;
-    font-weight: bold;
-  }
-  .input p{
-    font-size: 10px;
-  }
-  .second{
-    height: 200px;
-  }
+.input{
+  flex-grow: 1;
+}
+.input h3{
+  font-size: 14px;
+  padding: 10px 0;
+  font-weight: bold;
+  margin-left: 2%;
+}
+.input p{
+  font-size: 10px;
+  margin-left: 2%;
+}
+.second {
+  height: 200px;
+  margin: 2% auto;
+}
 .photo_text{
   color: #000000;
   font-size: 12px;
@@ -144,14 +181,14 @@ h2{
   left: 0;
 }
 h3::before{
-display: block;
-position: absolute;
-width: 100px;
-height: 5px;
-background-color: #53C67F;
-content: '';
-top: 24px;
-right: 176px;
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #53C67F;
+  content: '';
+  top: 24px;
+  right: 169px;
 }
 h4{
   font-size: 14px;
@@ -165,7 +202,7 @@ h4::before{
   height: 5px;
   background-color: #53C67F;
   content: '';
-  top: 35px;
+  top: 14px;
   left: 0;
 }
 .plan{
@@ -201,15 +238,15 @@ h4::before{
   left: 68px;
 }
 .zero {
-    font-size: 14px;
-    position: absolute;
-    top: 185px;
-    left: 0;
-    border: 1px solid #B8B8B8;
-    width: 100%;
-    background-color: #B8B8B8;
-    text-align: center;
-    color: #000000;
+  font-size: 14px;
+  position: absolute;
+  top: 185px;
+  left: 0;
+  border: 1px solid #B8B8B8;
+  width: 100%;
+  background-color: #B8B8B8;
+  text-align: center;
+  color: #000000;
 }
 .down{
   top: 203px;
@@ -244,30 +281,30 @@ h4::before{
   top: 221px;
 }
 .position {
-    top: 239px;
+  top: 239px;
 }
 .plan_type::before {
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: -13px;
-    left: 40%;
-    background-color: #FFFFFF;
-    border: 1px solid #787878;
-    border-radius: 50%;
-    content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -13px;
+  left: 40%;
+  background-color: #FFFFFF;
+  border: 1px solid #787878;
+  border-radius: 50%;
+  content: '';
 }
 .plan_type::after {
-    display: block;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: -5px;
-    left: 43%;
-    background-color: #787878;
-    border-radius: 50%;
-    content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: -5px;
+  left: 43%;
+  background-color: #787878;
+  border-radius: 50%;
+  content: '';
 }
 .WHITE::before{
   background-color: #53C67F;
@@ -276,10 +313,57 @@ h4::before{
 .WHITE::after{
   background-color: #FFFFFF;
 }
+.form{
+  width: 60%;
+  /*border: 1px solid black;*/
+}
+.checkbox{
+  width: 40%;
+  /*border: 1px solid black;*/
+  position: absolute;
+  top: 20px;
+  right: 0;
+  height: 266px;
+}
+input[type='text'],input[type='email'], textarea{
+  width: 100%;
+  font-size: 14px;
+  padding: 5px;
+  margin: 2% auto;
+}
+#red_chair {
+  width: 193px;
+  height: 168px;
+}
+input[type='submit'] {
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #53C67F;
+  border: #53C67F;
+  border-radius: 5px;
+  width: 132px;
+  height: 34px;
+  position: absolute;
+  bottom: 0;
+  left: 26px;
+}
 
-
-
-
+label {
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  left: 80px;
+  bottom: 45px;
+  color: #B0B0B0;
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+  position: absolute;
+  left: 39px;
+  bottom: 64px;
+}
+.fourth{
+  height: 350px;
+}
 .Signature{
   font-size: 12px;
   color: grey;
@@ -295,9 +379,9 @@ h4::before{
   right: 113px;
 }
 .last {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    color: #000000;
-    font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: #000000;
+  font-size: 12px;
 }
