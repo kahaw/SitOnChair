@@ -94,13 +94,27 @@ ul{
 .photo {
   top: 38px;
   left: 7px;
+  z-index: 1;
 }
 .text {
   top: 60px;
   right: 36px;
   width: 50%;
   text-align: center;
+  z-index: 1;
 }
+.arrow{
+  width: 5%;
+  color: #53C67F;
+  font-size: 68px;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+}
+.g{
+  right: -15px;
+}
+
 h2{
   color: #000000;
   font-size: 20px;
