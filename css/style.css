@@ -355,8 +355,8 @@ input[type='text'],input[type='email'], textarea{
 }
 input[type='submit'] {
   font-size: 16px;
-  color: #FFFFFF;
-  background-color: #53C67F;
+  /*color: #FFFFFF;
+  background-color: #53C67F;*/
   border: #53C67F;
   border-radius: 5px;
   width: 132px;
@@ -374,7 +374,7 @@ label {
   bottom: 45px;
   color: #B0B0B0;
 }
-[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+[type="checkbox"]{
   position: absolute;
   left: 39px;
   bottom: 64px;
