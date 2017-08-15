@@ -9,10 +9,21 @@ document.addEventListener("DOMContentLoaded",function(){
     else {
       document.querySelector('[type="submit"]').style.backgroundColor="grey";
       document.querySelector('[type="submit"]').style.color="#000000";
+      document.querySelector('[type="submit"]').disabled;
     }
+  });
 
-  })
-  document.querySelector('[type="submit"]').disabled;
+  var list=document.querySelector('#list');
+  var child=list.children[1];
+
+  list.addEventListener("mouseover",function(){
+    child.style.display="block";
+  });
+
+  list.addEventListener("mouseout",function(){
+    child.style.display="none";
+  });
+
 
 
 
